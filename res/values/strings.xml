@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SensibleJournal</string>
+    <string name="license">Copyright 2012-2013, Andrea Cuttone\n\n 
+SensibleJournal uses the following opensource projects:\n
+https://github.com/dinocore1/DevsmartLib-Android\n
+https://github.com/inazaruk/map-fragment\n
+http://www.makeurownrules.com/secure-rest-web-service-mobile-application-android.html\n
+https://code.google.com/p/achartengine/\n
+https://github.com/excilys/androidannotations\n
+http://www.date4j.net/\n
+https://code.google.com/p/google-gson/\n
+http://www.springsource.org/spring-android\n
+https://github.com/nostra13/Android-Universal-Image-Loader\n
+https://commons.apache.org/pool/index.html\n
+https://github.com/JakeWharton/Android-ViewPagerIndicator\n
+https://github.com/jgilfelt/android-mapviewballoons\n
+\n
+License information available at the webpages of the respective copyright owners\n
+\n
+The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License\n\n
+Icons adapted from http://mapicons.nicolasmollet.com/\n
+</string>
+</resources>

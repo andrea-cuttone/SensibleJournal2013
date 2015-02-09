@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <dk.dtu.imm.sensible.components.CustomDatePicker
+        android:id="@+android:id/datepicker_movement"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <dk.dtu.imm.sensible.map.CustomMapView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map_movement"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:apiKey="0p1YGnDjk3ac6YdCbXJQd8lxbk0-pTCPNXZUWmQ"
+            android:clickable="true" />
+
+        <dk.dtu.imm.sensible.movement.CustomSurfaceView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/surface_movement"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ProgressBar
+            android:id="@+android:id/progress_movement"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center"
+            android:background="@drawable/rounded_rect_shape"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textview_no_loc_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_rect_shape"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="No data"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" >
+
+        <SeekBar
+            android:id="@+id/seekbar_movement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+android:id/btn_movmap_playstop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:src="@drawable/play" />
+    </LinearLayout>
+
+</LinearLayout>

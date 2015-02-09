@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp" >
+
+    <ImageView
+        android:id="@+android:id/btn_datepicker_prev"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/navigation_previous_item"
+        android:layout_weight="2" />
+
+    <TextView
+        android:id="@+android:id/text_datepicker_date"
+        style="@style/LabelStyle"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+android:id/btn_datepicker_next"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:src="@drawable/navigation_next_item" />
+
+</LinearLayout>

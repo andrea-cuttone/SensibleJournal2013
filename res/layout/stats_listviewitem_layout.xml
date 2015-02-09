@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/stats_listitem_shape"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textview_listviewitemstats_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingBottom="3dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:text="Date"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" >
+    </TextView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/holo_blue" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layout_rows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:orientation="vertical" >
+
+            <dk.dtu.imm.sensible.components.StatsRowView
+                android:id="@+id/rowview_stationary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </dk.dtu.imm.sensible.components.StatsRowView>
+
+            <dk.dtu.imm.sensible.components.StatsRowView
+                android:id="@+id/rowview_walking"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+            </dk.dtu.imm.sensible.components.StatsRowView>
+
+            <dk.dtu.imm.sensible.components.StatsRowView
+                android:id="@+id/rowview_vehicle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+            </dk.dtu.imm.sensible.components.StatsRowView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chart_stats"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center|right"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_separator"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/layout_rows"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/holo_blue" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/v_separator"
+            android:layout_gravity="left"
+            android:orientation="vertical" >
+
+            <dk.dtu.imm.sensible.components.StatsRowView
+                android:id="@+id/rowview_loc1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </dk.dtu.imm.sensible.components.StatsRowView>
+
+            <dk.dtu.imm.sensible.components.StatsRowView
+                android:id="@+id/rowview_loc2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </dk.dtu.imm.sensible.components.StatsRowView>
+
+            <dk.dtu.imm.sensible.components.StatsRowView
+                android:id="@+id/rowview_loc3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </dk.dtu.imm.sensible.components.StatsRowView>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+android:id/progress_stats"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center|center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textview_no_stats_data"
+            style="@style/LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center|center"
+            android:padding="5dp"
+            android:text="No data"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

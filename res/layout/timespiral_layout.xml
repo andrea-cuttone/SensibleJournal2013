@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textview_locs"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:gravity="center|center"
+        android:padding="2dp"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_margin="0dp"
+        android:background="@color/holo_blue" />
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1" >
+
+        <dk.dtu.imm.sensible.timespiral.SpiralSurfaceView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/surface_spiral" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent"/>
+
+        <ProgressBar
+            android:id="@+android:id/progress_timespiral"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top|right"
+            android:layout_margin="15dp"
+            android:visibility="gone" />
+    </FrameLayout>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_margin="0dp"
+        android:background="@color/holo_blue" />
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/navigation_previous_item" />
+
+        <dk.dtu.imm.sensible.components.HorizontalListView
+            android:id="@+id/timeline"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/navigation_next_item" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent">  
+	<dk.dtu.imm.sensible.map.CustomMapView
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/mapview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:clickable="true"
+	   	android:apiKey="0p1YGnDjk3ac6YdCbXJQd8lxbk0-pTCPNXZUWmQ"
+	/>
+	
+	<ProgressBar android:indeterminate="true"
+            android:layout_width="50dp" android:layout_height="50dp"
+            android:id="@+id/map_progressicon" style="?android:attr/progressBarStyle"
+            android:layout_gravity="top|right" android:paddingRight="10dp"
+			android:paddingTop="10dp" />  
+</FrameLayout>

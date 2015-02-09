@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LabelStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">22dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+    
+    <style name="Theme.CustomPageIndicator" parent="android:style/Theme.Holo">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
+
+    <style name="Widget">
+    </style>
+
+    <style name="Widget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">22dip</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="TextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/vpi__dark_theme</item>
+    </style>
+
+    <style name="Widget.IconPageIndicator" parent="Widget">
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+    
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+</resources>

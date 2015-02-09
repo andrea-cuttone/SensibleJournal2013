@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="widget_bg">#77000000</color>
+	<color name="text_fg">#FFFFFF</color>
+	<color name="holo_blue">#33b5e5</color>
+	<color name="stats1">#a8dff4</color>
+	<color name="stats2">#0099cc</color>
+	<color name="stats3">#004dcc</color>
+</resources>
